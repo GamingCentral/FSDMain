@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        .inputtag{
+            margin-left: 3%;
+        }
+        .tLogin{
+            justify-content: center;
+            background-color: rgb(164, 241, 241);
+            margin-top: 5%;
+            width: 60%;
+            aspect-ratio: 2;
+        }
+        .submit{
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: beige;
+            
+        }
+    </style>
 </head>
-<body>
-    
+<body style="background-color: rgb(186, 142, 228);"> <center>
+    <table border="1" class="tLogin">
+        <tr>
+            <td>
+                <center><h2>Login Form</h2></center>
+                <br>
+                <center><label>Username<input class="inputtag" type="text"></label></center>
+                <br>
+                <center><label>Password <input type="password" class="inputtag"></label></center>
+                <br> <br>
+                <center><button class="submit">Submit</button></center>
+                <br>
+                <center><label>don't have one? <a href="#">Register</a></label></center> <!--add link/path to register.html-->
+            </td>
+        </tr> 
+    </table> </center>
 </body>
 </html>
