@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/CSSPractice.css">
+    <style>
+        /*internal*/
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="second-container rounded"><h1 class="bringtocenter">header</h1></div>  <!-- this is inline style -->
+        <div class="middle rounded" style="padding-left: 24%;">
+            <div>Left</div>
+            <div>
+                <p class="fontclass">this is the main elemnet that comes into the <br> this is new line</p>
+            </div>
+            <div>Right</div>
+        </div>
+        <div class="second-container rounded"><h1 class="bringtocenter">footer</h1></div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+    
+    INLINE
+    -----------------------------------------------------------------------------------
+    individual tags only styles
+    property: value; -> inline syntax
+    -------------------------------------------------------------------------------------
+
+
+    INTERNAL
+    -------------------------------------------------------------------------------------
+    inside head tag using style tag for common styles that are applicable to entire page.
+    <head> <style></style> </head> -> internal syntax
+    ---------------------------------------------------------------------------------------
+
+    selectors: 
+    ---------------------------------------------------------------------------------------
+    *[for all elements]
+
+    using tag_name
+        tagname{
+            properties
+        }
+
+    using tag_id
+        #idname{
+            properties
+        }
+    
+    using class_name
+        .class{
+            properties
+        }
+    -----------------------------------------------------------------------------------------
+
+    First applies external then internal and then finally inline hence inline>internal>external
+    
+    Responsive Web Design:
+    adjusts automatically the width and content based on screen size
+    
+    % -> occupies according to content
+    vh -> vertical height, occupies according to entire screen rather than content
+
+    ------------------------------------------------------------------------------------------
+
+    space outside of the element : margin
+    space inside of element : padding
+-->
