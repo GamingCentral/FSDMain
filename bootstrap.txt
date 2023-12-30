@@ -1,0 +1,90 @@
+bootstrap is a frame work of css ie contains all the required css put using keyword classes
+bootstrap is by default responsive
+
+boilerplate for bootstrap
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+there are two types of containers:
+1. Container : occupies 80% of the screen or less cause it has margin and padding default
+2. Container-fluid : occupies 100% of the screen or less cause it only has padding
+note that we can have container-{breakpoint} which occupies 100% until a given breakpoint
+Eg: container-sm, container-md, lg xl xxl whrere sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px
+
+
+GRID SYSTEM: 
+
+containers are made of rows, each row has 12 columns maximum. Each row is organised into 12 columns.
+These columns can be readjusted according to need ie a column can take any size from 1 to 12 columns.
+These rows and columns are made of flex property which allows responsiveness
+
+rows are specified in class: 'row'
+column is specified by class: 'col'
+
+if a column wants to occupy n columns (n<=12) then give class name as: 'col-n'
+we can also use breakpoint specific columns as class: 'col-{breakpoint}-n' ie that column occupies n only when the breakpoint is active
+
+class 'navbar' is used to create a navbar in Bootstrap, navbar by defualt occupies 100% ie container-fluid
+navbar has also a class 'navbar-expand' {}, 'navbar-light' {takes light background and dark text} and 'navbra-dark'{reverse}
+'navbar-brand' is used to give logo
+'navbar-nav' for ul and 'nav-item' for list elements
+'nav-link' for links
+'navbar-collapse collapse' for entire list div
+
+padding can be given to a class using px-{pixels} for left and right in the class name ie class='classname px-n' and py for top and bottom
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.brandLogo{
+    max-width: 100px;
+}
+.navbar-top{
+    background-color: rgb(8, 8, 52);
+}
+.location{
+    max-width: 10px;
+}
+#location-list{
+    display: inline !important;
+}
+.delivery-font{
+    color: white;
+    font-size: small;
+}
+.del{
+    display: inline-block;
+    line-height: 14px;
+    position: absolute;
+    top: 20px;
+    padding-left: 0.5%;
+    font-size: x-small;
+}
+.ind{
+    display: inline-block;
+    position: absolute;
+    top: 29px;
+    padding-left: 0.5%;
+    font-weight: bold;
+}
+.navbar-search{
+    display: inline-block;
+}
+.deliveryAt{
+    display: inline-block;
+    width: 6%;
+}
+.input-group{
+    display: inline-block !important;
+    width: 45% !important;
+}
+.form-control {
+    width: 100% !important;
+}
